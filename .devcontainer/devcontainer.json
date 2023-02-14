@@ -3,7 +3,7 @@
         "cpus": 4
     },
     "updateContentCommand": "npm install",
-    "postAttachCommand": "npm run dev && npm run storybook",
+    "postAttachCommand": "npm run dev",
     "customizations": {
         "codespaces": {
             "openFiles": [
@@ -19,15 +19,15 @@
             ]
         }
     },
-    "forwardPorts": [3000, 6006],
+    "forwardPorts": [3000],
     "portsAttributes": {
         "3000": {
           "label": "Application",
           "onAutoForward": "openPreview"
-        },
-        "6006": {
-            "label": "Storybook",
-            "onAutoForward": "openBrowser"
         }
+        // "6006": {
+        //     "label": "Storybook",
+        //     "onAutoForward": "openBrowser"
+        // }
       }
 }
