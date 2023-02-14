@@ -1,0 +1,29 @@
+{
+    "hostRequirements": {
+        "cpus": 4
+    },
+    // Use "updateContentCommand" to run commands immediately after the container is created 
+    "updateContentCommand": "npm install",
+    "postAttachCommand": {
+        "server": "npm run dev"
+      },
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "src/pages/app.tsx"
+            ]
+        },
+        // add IDs of the extensions you want to be installed when the container is created
+        "vscode": {
+            "extensions": []
+        }
+    },
+    "portsAttributes": {
+        "3000": {
+          "label": "Application",
+          "onAutoForward": "openPreview"
+        }
+      },
+    // Use 'forwardPorts' to make a list of ports inside the container available locally 
+    "forwardPorts": [3000]
+}
