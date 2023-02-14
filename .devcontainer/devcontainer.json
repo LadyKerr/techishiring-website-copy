@@ -25,9 +25,5 @@
           "label": "Application",
           "onAutoForward": "openPreview"
         }
-        // "6006": {
-        //     "label": "Storybook",
-        //     "onAutoForward": "openBrowser"
-        // }
       }
 }
