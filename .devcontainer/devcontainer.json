@@ -3,10 +3,7 @@
         "cpus": 4
     },
     "updateContentCommand": "npm install",
-    "postAttachCommand": {
-        "server": "npm run dev",
-        "storybook": "npm run storybook"
-      },
+    "postAttachCommand": "npm run dev && npm run storybook",
     "customizations": {
         "codespaces": {
             "openFiles": [
