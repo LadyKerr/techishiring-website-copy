@@ -1,4 +1,6 @@
 {
+    // image being used 
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
     // set minimum cpu
     "hostRequirements": {
         "cpus": 4
